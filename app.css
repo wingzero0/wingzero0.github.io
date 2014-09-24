@@ -2,6 +2,10 @@
   max-width:100%;
 }
 
+.timestamp {
+  color: blue;
+}
+
 .ui-icon-phone {
   background-image: url(images/call.png);
   background-repeat: no-repeat;
