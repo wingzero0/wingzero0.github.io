@@ -25,6 +25,9 @@
 	app.view.addPost = function(time, message, postId){
 		// app.view.dropPost();
 		var localTime = new Date(time);
+		if (typeof(message) == 'undefined'){
+			message = "";
+		}
 		$("#userInfo").append("<div id='" + postId + "'><p class='timestamp'>" + localTime.toLocaleString() + "</p>" + "<p>" + message + "</p>" + "</div>");
 	}
 	app.view.addPhoto = function(id, pictureSrc){
